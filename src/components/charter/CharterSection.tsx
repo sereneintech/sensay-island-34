@@ -3,8 +3,29 @@ import { Button } from "@/components/ui/button";
 import { Download, ExternalLink } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
+import { useToast } from "@/hooks/use-toast";
 
 export function CharterSection() {
+  const { toast } = useToast();
+
+  const handleDownloadClick = () => {
+    // In a real app, this would be a real PDF download
+    // For now, we'll show a toast to indicate it's working
+    toast({
+      title: "Download started",
+      description: "Your charter PDF is being downloaded.",
+    });
+    
+    // Create an anchor element and trigger download
+    const link = document.createElement('a');
+    link.href = '/sensay-island-charter.pdf'; // This would be a real PDF in production
+    link.download = 'sensay-island-charter.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -17,7 +38,10 @@ export function CharterSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-              <Button className="bg-sensay-blue hover:bg-sensay-blue/90">
+              <Button 
+                className="bg-sensay-blue hover:bg-sensay-blue/90"
+                onClick={handleDownloadClick}
+              >
                 <Download className="mr-2 h-4 w-4" /> Download Full Charter (PDF)
               </Button>
               
