@@ -39,7 +39,7 @@ export function CharterSection() {
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
               <Button 
-                className="bg-sensay-blue hover:bg-sensay-blue/90"
+                variant="secondary"
                 onClick={handleDownloadClick}
               >
                 <Download className="mr-2 h-4 w-4" /> Download Full Charter (PDF)
