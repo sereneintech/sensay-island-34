@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 
@@ -16,9 +16,19 @@ export function CharterSection() {
               for a harmonious coexistence between humans and artificial intelligence.
             </p>
             
-            <Button className="mt-6 bg-sensay-blue hover:bg-sensay-blue/90">
-              <Download className="mr-2 h-4 w-4" /> Download Full Charter (PDF)
-            </Button>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+              <Button className="bg-sensay-blue hover:bg-sensay-blue/90">
+                <Download className="mr-2 h-4 w-4" /> Download Full Charter (PDF)
+              </Button>
+              
+              <Button 
+                variant="secondary" 
+                className="bg-sensay-navy hover:bg-sensay-navy/80"
+                onClick={() => window.open("https://docsend.com/v/pqvwr/sensay-island", "_blank", "noopener,noreferrer")}
+              >
+                <ExternalLink className="mr-2 h-4 w-4" /> View Full Charter
+              </Button>
+            </div>
           </div>
           
           <div className="glass-card p-8 mt-12">
