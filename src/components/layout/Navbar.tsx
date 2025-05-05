@@ -63,8 +63,8 @@ export function Navbar() {
                 {link.name}
               </NavLink>
             ))}
-            <Button variant="default" className="bg-sensay-teal hover:bg-sensay-teal/90">
-              Apply Now
+            <Button variant="default" className="bg-sensay-teal hover:bg-sensay-teal/90" asChild>
+              <NavLink to="/residency">Apply Now</NavLink>
             </Button>
           </nav>
 
@@ -99,8 +99,8 @@ export function Navbar() {
               </NavLink>
             ))}
             <div className="pt-2">
-              <Button variant="default" className="w-full bg-sensay-teal hover:bg-sensay-teal/90">
-                Apply Now
+              <Button variant="default" className="w-full bg-sensay-teal hover:bg-sensay-teal/90" asChild>
+                <NavLink to="/residency" onClick={() => setIsOpen(false)}>Apply Now</NavLink>
               </Button>
             </div>
           </nav>
