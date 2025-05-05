@@ -54,8 +54,8 @@ export function Footer() {
               </p>
               <p className="flex items-center gap-2 text-sm">
                 <Mail size={16} className="text-sensay-teal" />
-                <a href="mailto:hello@sensay.island" className="hover:text-sensay-teal transition-colors">
-                  hello@sensay.island
+                <a href="mailto:hello@sensayisland.com" className="hover:text-sensay-teal transition-colors">
+                  hello@sensayisland.com
                 </a>
               </p>
             </address>

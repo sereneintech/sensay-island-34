@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -14,12 +13,12 @@ export function ContactInfo() {
               </div>
               <h4 className="mb-2">Email Us</h4>
               <p className="text-gray-600 mb-2">General Inquiries</p>
-              <a href="mailto:hello@sensay.island" className="text-sensay-blue hover:text-sensay-green transition-colors">
-                hello@sensay.island
+              <a href="mailto:hello@sensayisland.com" className="text-sensay-blue hover:text-sensay-green transition-colors">
+                hello@sensayisland.com
               </a>
               <p className="text-gray-600 mt-4 mb-2">Press Office</p>
-              <a href="mailto:press@sensay.island" className="text-sensay-blue hover:text-sensay-green transition-colors">
-                press@sensay.island
+              <a href="mailto:press@sensayisland.com" className="text-sensay-blue hover:text-sensay-green transition-colors">
+                press@sensayisland.com
               </a>
             </Card>
             
