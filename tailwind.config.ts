@@ -63,11 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Sensay Island custom colors
+				// Sensay Island custom colors - updated with new color palette
 				sensay: {
-					blue: "#004E7C",
-					green: "#007F6F",
-					gold: "#E6B800"
+					teal: "#00A99D",     // Emerald Teal (primary)
+					navy: "#0B2038",     // Midnight Navy
+					gold: "#F4B946",     // Solar Gold
+					stone: "#F2F5F7",    // Cloud Stone
+					jade: "#4FB879"      // Leaf Jade
 				}
 			},
 			borderRadius: {
@@ -110,8 +112,8 @@ export default {
 				'slide-up': 'slide-up 0.7s ease-out'
 			},
 			fontFamily: {
-				'merriweather': ['Merriweather', 'serif'],
-				'inter': ['Inter', 'sans-serif']
+				'dm-serif': ['"DM Serif Display"', 'serif'],
+				'roboto': ['Roboto', 'sans-serif']
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/images/hero-bg.jpg')"

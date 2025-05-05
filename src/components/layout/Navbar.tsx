@@ -44,8 +44,8 @@ export function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <NavLink to="/" className="flex items-center">
-            <span className="font-merriweather font-bold text-2xl text-sensay-blue">
-              Sensay <span className="text-sensay-green">Island</span>
+            <span className="font-dm-serif font-normal text-2xl text-sensay-navy">
+              Sensay <span className="text-sensay-teal">Island</span>
             </span>
           </NavLink>
 
@@ -56,14 +56,14 @@ export function Navbar() {
                 key={link.path} 
                 to={link.path} 
                 className={({ isActive }) => cn(
-                  "text-sm font-medium transition-colors hover:text-sensay-blue",
-                  isActive ? "text-sensay-blue" : "text-foreground"
+                  "text-sm font-medium transition-colors hover:text-sensay-teal",
+                  isActive ? "text-sensay-teal" : "text-sensay-navy"
                 )}
               >
                 {link.name}
               </NavLink>
             ))}
-            <Button variant="default" className="bg-sensay-blue hover:bg-sensay-blue/90">
+            <Button variant="default" className="bg-sensay-teal hover:bg-sensay-teal/90">
               Apply Now
             </Button>
           </nav>
@@ -75,9 +75,9 @@ export function Navbar() {
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6 text-sensay-navy" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-6 w-6 text-sensay-navy" />
             )}
           </button>
         </div>
@@ -91,7 +91,7 @@ export function Navbar() {
                 to={link.path} 
                 className={({ isActive }) => cn(
                   "block py-2 text-base font-medium",
-                  isActive ? "text-sensay-blue" : "text-foreground"
+                  isActive ? "text-sensay-teal" : "text-sensay-navy"
                 )}
                 onClick={() => setIsOpen(false)}
               >
@@ -99,7 +99,7 @@ export function Navbar() {
               </NavLink>
             ))}
             <div className="pt-2">
-              <Button variant="default" className="w-full bg-sensay-blue hover:bg-sensay-blue/90">
+              <Button variant="default" className="w-full bg-sensay-teal hover:bg-sensay-teal/90">
                 Apply Now
               </Button>
             </div>

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Roboto:wght@300;400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 198 100% 25%; /* Ocean blue */
+    --primary: 177 100% 33%; /* Emerald Teal */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 173 100% 25%; /* Emerald green */
+    --secondary: 215 65% 13%; /* Midnight Navy */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 44 100% 45%; /* Gold accent */
+    --accent: 40 89% 62%; /* Solar Gold */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 177 100% 33%; /* Emerald Teal */
 
     --radius: 0.5rem;
 
@@ -57,16 +57,16 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 198 100% 25%;
+    --primary: 177 100% 33%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 173 100% 25%;
+    --secondary: 215 65% 13%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 44 100% 45%;
+    --accent: 40 89% 62%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -74,7 +74,8 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 177 100% 33%;
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -92,35 +93,42 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground font-roboto;
+    line-height: 1.35;
+    font-size: 17px;
   }
 
   h1, h2, h3, h4, h5 {
-    @apply font-merriweather;
+    @apply font-dm-serif;
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    @apply text-3xl md:text-4xl lg:text-[42px] font-normal;
+    line-height: 1.35;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-bold;
+    @apply text-2xl md:text-3xl lg:text-[32px] font-normal;
+    line-height: 1.35;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-xl md:text-2xl lg:text-[24px] font-normal;
+    line-height: 1.35;
   }
 
   h4 {
-    @apply text-xl md:text-2xl font-semibold;
+    @apply text-lg md:text-xl font-normal;
+    line-height: 1.35;
   }
 
   h5 {
-    @apply text-lg md:text-xl font-semibold;
+    @apply text-base md:text-lg font-normal;
+    line-height: 1.35;
   }
 
   .glass-card {
-    @apply bg-white bg-opacity-80 backdrop-blur-md border border-white border-opacity-40 rounded-lg shadow-lg;
+    @apply bg-sensay-stone bg-opacity-80 backdrop-blur-md border border-white border-opacity-40 rounded-lg shadow-lg;
   }
 }
 
@@ -139,5 +147,5 @@
 
 /* Custom styling */
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-sensay-blue to-sensay-green;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-sensay-teal to-sensay-jade;
 }
