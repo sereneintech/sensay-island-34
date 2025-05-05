@@ -8,10 +8,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "AI Government", path: "/government" },
   { name: "Charter", path: "/charter" },
-  { name: "Residency", path: "/residency" },
-  { name: "Research", path: "/research" },
   { name: "News", path: "/news" },
   { name: "Contact", path: "/contact" }
 ];
@@ -53,7 +50,7 @@ export function Navbar() {
           </NavLink>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map(link => (
               <NavLink 
                 key={link.path} 

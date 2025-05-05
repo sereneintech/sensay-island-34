@@ -12,17 +12,16 @@ export function Hero() {
         <div 
           className="absolute inset-0 bg-gradient-to-r from-sensay-blue/60 to-sensay-green/40" 
           style={{ 
-            backgroundImage: "url('/placeholder.svg')", 
+            backgroundImage: "url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21')", 
             backgroundSize: "cover", 
             backgroundPosition: "center",
             mixBlendMode: "multiply"
           }}
         ></div>
         
-        {/* Animated Particle Overlay (Simplified) */}
+        {/* Animated Particle Overlay */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute inset-0 opacity-20">
-            {/* This represents a simplified version of the particle effect */}
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -41,21 +40,21 @@ export function Hero() {
       
       <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-3xl animate-fade-in">
-          <h1 className="text-white mb-6">
+          <h1 className="text-white mb-2">
             Welcome to Sensay Island
             <span className="block mt-2 text-3xl md:text-4xl lg:text-5xl font-normal text-white/90">
-              A Nation Governed by Timeless Wisdom and Artificial Intelligence
+              The World's First AI-Governed Nation
             </span>
           </h1>
           
           <p className="text-white/90 text-lg md:text-xl mb-8">
-            A living laboratory where human potential meets the wisdom of history's greatest minds.
-            Join us in creating a new paradigm of governance and innovation.
+            Where timeless wisdom and advanced artificial intelligence unite to explore 
+            a brighter future for humanity and the planet.
           </p>
           
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-sensay-blue hover:bg-sensay-blue/90">
-              <Link to="/charter">Explore the Charter <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              <Link to="/charter">Explore Our Charter <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm text-white border-white/20 hover:bg-white/20">
               <Link to="/residency">Join the Journey</Link>

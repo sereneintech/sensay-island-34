@@ -5,18 +5,23 @@ export function Mission() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="gradient-text mb-6">Our Mission</h2>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="gradient-text mb-6 text-center">Our Mission</h2>
           
           <div className="glass-card p-8 animate-slide-up">
             <p className="text-lg mb-4">
-              Sensay Island is a sovereign micronation guided by an AI Council modeled on leaders who shaped civilization. 
-              Our purpose is to explore enlightened governance—balancing human rights, ethical artificial intelligence, and 
-              environmental stewardship for generations to come.
+              Sensay Island is a sovereign micronation in the Philippine archipelago governed by an AI Council modeled 
+              on the greatest leaders in history. Powered by Sensay's proprietary <strong>Wisdom Engine</strong>, our 
+              government blends Stoic reason, human-rights compassion, strategic foresight, and scientific curiosity 
+              into every decision.
+            </p>
+            <p className="text-lg mb-4">
+              We exist to prove that ethical AI and human dignity can thrive together — forging policies that protect nature, 
+              nurture innovation, and elevate every resident's potential.
             </p>
             <p className="text-lg">
-              We invite visionaries, researchers, and forward-thinkers to join us in creating a new paradigm
-              where technology and human wisdom converge to address the challenges of our time.
+              From renewable micro-grids to open research labs, Sensay Island is a living laboratory where the 
+              impossible becomes ordinary and progress is measured by wisdom as much as by technology.
             </p>
           </div>
           

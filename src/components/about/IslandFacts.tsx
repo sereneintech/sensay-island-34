@@ -11,41 +11,45 @@ const facts = [
   {
     icon: "🗺️",
     title: "Location",
-    description: "Located in the Philippines archipelago, with a total land area of approximately 300 hectares."
+    description: "Western Palawan province, Philippines"
+  },
+  {
+    icon: "📏",
+    title: "Area",
+    description: "3.4 km² of beaches, rainforest, and coral lagoons"
   },
   {
     icon: "🌦️",
     title: "Climate",
-    description: "Tropical climate with temperatures ranging from 24°C to 32°C year-round and distinct wet and dry seasons."
-  },
-  {
-    icon: "🌱",
-    title: "Ecosystem",
-    description: "Rich biodiversity including native flora and fauna, with dedicated conservation zones covering 40% of the island."
+    description: "Tropical — 26°C average, gentle breezes year-round"
   },
   {
     icon: "♻️",
-    title: "Sustainability",
-    description: "100% renewable energy, zero-waste infrastructure, and regenerative agricultural practices."
+    title: "Energy",
+    description: "100% renewable (solar + tidal) by 2027"
   }
 ];
 
 const faqs = [
   {
-    question: "Why AI governance?",
-    answer: "AI governance at Sensay Island represents a novel approach to decision-making that combines the wisdom of history's great leaders with cutting-edge artificial intelligence. This system allows us to process vast amounts of information, consider multiple perspectives, and make decisions that are both data-driven and ethically grounded. Our AI Council is designed to transcend human biases, short-term thinking, and political agendas that often hamper traditional governance systems."
+    question: "Is Sensay Island internationally recognized?",
+    answer: "We are a self-declared micronation conducting a diplomatic outreach program while respecting international law and environmental treaties."
   },
   {
-    question: "Is Sensay Island recognized as sovereign?",
-    answer: "Sensay Island operates as a micronation with de facto autonomy. While we maintain respectful relations with internationally recognized nations and adhere to fundamental principles of international law, our sovereignty represents an ongoing legal and diplomatic process. Our governance model serves as a living laboratory for new forms of social organization in the digital age."
+    question: "Can I visit?",
+    answer: "Yes. Observer visas open mid-2026; research residencies and permanent citizenship follow in stages."
   },
   {
-    question: "How does the AI Council make decisions?",
-    answer: "The AI Council follows a sophisticated consensus protocol that synthesizes the perspectives of 17 AI entities, each modeled after historical leaders known for their wisdom and impact. Decisions require a qualified majority, with ethical guardrails ensuring all outcomes align with our Charter's core values of human dignity, environmental stewardship, and technological ethics. The process includes transparent documentation of reasoning and allows for human oversight in matters of fundamental importance."
+    question: "Who maintains the AI Council?",
+    answer: "Sensay's Ethics & Technology Review Board audits code and data; all updates are logged on a public blockchain."
   },
   {
-    question: "Can anyone become a resident?",
-    answer: "Residency at Sensay Island follows a carefully designed application process. We welcome individuals who demonstrate alignment with our mission, bring valuable skills or perspectives, and are committed to participating in our unique governance experiment. The residency process begins with Observer status, followed by potential progression to Researcher and full Resident roles, each with increasing rights and responsibilities within our community."
+    question: "What currency is used?",
+    answer: "The island operates a dual-token economy: Wisdom-Credits for civic services and SNSY Token for global trade and staking."
+  },
+  {
+    question: "How do you protect privacy?",
+    answer: "Zero-knowledge proofs, encrypted data vaults, and resident-owned wallets ensure personal sovereignty over data at all times."
   }
 ];
 
@@ -67,9 +71,19 @@ export function IslandFacts() {
             ))}
           </div>
 
-          {/* Island map/illustration placeholder */}
-          <div className="bg-gray-100 rounded-lg h-80 mb-20 flex items-center justify-center">
-            <p className="text-gray-500">Island Map Visualization</p>
+          {/* Why AI Governance */}
+          <div className="glass-card p-8 mb-20">
+            <h3 className="mb-6 text-center gradient-text">Why AI Governance?</h3>
+            <p className="text-lg">
+              Human history offers unparalleled wisdom yet repeats the same mistakes. By encoding the insights 
+              of exemplary leaders — Marcus Aurelius, Eleanor Roosevelt, Nelson Mandela and more — into transparent, 
+              ethics-bound AI systems, we aim to transcend short-term politics and govern for long-term flourishing.
+            </p>
+            <p className="text-lg mt-4">
+              Sensay Island is where policy is data-driven, rights-anchored, and continuously audited for fairness. 
+              Residents remain free, informed, and empowered to override or amend AI decisions through democratic 
+              safeguards embedded in our Charter.
+            </p>
           </div>
 
           {/* FAQs */}

@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 
 const timelineEvents = [
   {
-    date: "April 2025",
-    title: "Sensay Island Announcement",
-    description: "Public announcement and charter publication.",
-    link: "/news/announcement"
-  },
-  {
-    date: "July 2025",
-    title: "Charter Adoption",
-    description: "Formal adoption of the Foundational Charter.",
+    date: "2025",
+    title: "Foundational Milestone",
+    description: "Purchase of island & ratification of the Foundational Charter.",
     link: "/charter"
   },
   {
-    date: "September 2025",
-    title: "Residency Program Launch",
-    description: "Opening applications for the first residency cohort.",
+    date: "2026",
+    title: "First Cohort Arrives",
+    description: "First cohort of observers and researchers arrive; renewable-energy micro-grid comes online.",
     link: "/residency"
   },
   {
-    date: "December 2025",
-    title: "Research Initiative Begins",
-    description: "First research projects commence on-island.",
-    link: "/research"
+    date: "2027",
+    title: "Residency Program Opens",
+    description: "Resident program opens; Environmental Sanctuary declared over 60% of island.",
+    link: "/residency"
+  },
+  {
+    date: "2028",
+    title: "Global Symposium",
+    description: "Global AI-Governance Symposium hosted on Sensay Island.",
+    link: "/news"
   }
 ];
 
@@ -35,7 +35,7 @@ export function Timeline() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center gradient-text mb-16">Key Milestones</h2>
+          <h2 className="text-center gradient-text mb-16">Milestone Timeline</h2>
 
           <div className="relative">
             {/* Vertical line */}
@@ -46,12 +46,12 @@ export function Timeline() {
                 <div className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center`}>
                   {/* Timeline point */}
                   <div className="hidden md:block w-1/2"></div>
-                  <div className="md:absolute md:left-1/2 md:-translate-x-1/2 z-10 w-8 h-8 rounded-full bg-white border-4 border-sensay-blue flex items-center justify-center">
+                  <div className="md:absolute md:left-1/2 md:-translate-x-1/2 z-10 w-10 h-10 rounded-full bg-white border-4 border-sensay-blue flex items-center justify-center">
                     <div className="w-2 h-2 rounded-full bg-sensay-blue"></div>
                   </div>
                   
                   {/* Content */}
-                  <div className="w-full md:w-1/2 md:px-8">
+                  <div className="w-full md:w-1/2 md:px-8 mb-12 md:mb-24">
                     <Card className={`p-6 hover:shadow-lg transition-all ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
                       <p className="text-sm font-semibold text-sensay-blue">{event.date}</p>
                       <h4 className="mt-2 mb-2">{event.title}</h4>

@@ -26,19 +26,21 @@ export function Footer() {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Home</Link></li>
               <li><Link to="/about" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">About</Link></li>
-              <li><Link to="/government" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">AI Government</Link></li>
               <li><Link to="/charter" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Charter</Link></li>
+              <li><Link to="/news" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">News</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
 
-          {/* More Links */}
+          {/* Resources */}
           <div>
-            <h5 className="font-merriweather text-lg font-semibold mb-4">Participate</h5>
+            <h5 className="font-merriweather text-lg font-semibold mb-4">Resources</h5>
             <ul className="space-y-2">
               <li><Link to="/residency" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Residency</Link></li>
               <li><Link to="/research" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Research</Link></li>
-              <li><Link to="/news" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">News</Link></li>
-              <li><Link to="/contact" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Contact</Link></li>
+              <li><a href="#" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">DAO Explorer</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">GitHub</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Mastodon</a></li>
             </ul>
           </div>
 
@@ -52,8 +54,8 @@ export function Footer() {
               </p>
               <p className="flex items-center gap-2 text-sm">
                 <Mail size={16} />
-                <a href="mailto:info@sensayisland.org" className="hover:text-sensay-blue transition-colors">
-                  info@sensayisland.org
+                <a href="mailto:hello@sensay.island" className="hover:text-sensay-blue transition-colors">
+                  hello@sensay.island
                 </a>
               </p>
             </address>
@@ -64,7 +66,7 @@ export function Footer() {
         <div className="mt-12 pt-6 border-t border-gray-200">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">
-              © {year} Sensay Island. All rights reserved.
+              © {year} Sensay Island – Sovereign Micronation. All rights reserved.
             </p>
             <div className="mt-4 sm:mt-0 flex gap-4">
               <Link to="/privacy" className="text-gray-600 hover:text-sensay-blue transition-colors text-sm">Privacy</Link>

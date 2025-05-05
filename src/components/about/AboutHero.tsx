@@ -16,22 +16,21 @@ export function AboutHero() {
           </p>
 
           <div className="glass-card p-8 text-left">
-            <p className="mb-4 italic border-l-4 border-sensay-blue/50 pl-4">
-              "Sensay Island stands as a living laboratory where the accumulated wisdom of human history 
-              meets cutting-edge artificial intelligence in service of a profound question: How might we 
-              govern ourselves with greater wisdom, compassion and foresight in the age of AI?"
-            </p>
+            <blockquote className="mb-6 italic border-l-4 border-sensay-blue/50 pl-4">
+              "We, the citizens and founders of Sensay Island, guided by human wisdom and augmented by artificial intelligence, 
+              establish this nation to advance justice, knowledge, and the common good for generations to come."
+            </blockquote>
             
             <p>
-              Our journey began with a simple yet revolutionary idea: What if we could create a governance 
-              system that synthesizes the greatest insights from history's wisest leaders, enhanced by 
-              artificial intelligence, and applied to the challenges of today and tomorrow?
+              Sensay Island stands as a living laboratory where the accumulated wisdom of human history 
+              meets cutting-edge artificial intelligence in service of a profound question: How might we 
+              govern ourselves with greater wisdom, compassion and foresight in the age of AI?
             </p>
           </div>
           
           <div className="mt-12">
             <Button asChild size="lg" className="bg-sensay-blue hover:bg-sensay-blue/90">
-              <Link to="/government">Meet the AI Council <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              <Link to="/charter">Explore Our Charter <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
           </div>
         </div>
